@@ -1,0 +1,10 @@
+﻿buff_id,buff_name,buff_type,duration,max_stack,base_effect,desc
+B001,高位压迫,正向,3,3,enemy_point_loss_chance=0.3,对手每回合有概率损失1战术点
+B002,边路压制,正向,2,3,enemy_side_attack_reduce=0.2,削弱对手边路进攻射门概率
+B003,稳固防线,正向,2,3,enemy_goal_reduce=0.3,降低对手进球概率
+B004,中场控制力,正向,2,3,point_max+1,每回合战术点数上限+1
+BD001,体能下滑,负面,1,3,card_effect-0.05,每层所有卡牌效果降低5%
+BD002,防线漏洞,负面,2,3,defense_effect-0.06,防守卡牌效果降低
+BD003,中场脱节,负面,2,3,mid_card_effect-0.08,中场卡牌效果降低
+BD004,体能透支,负面,比赛单局,1,all_card_effect-0.1,本场所有卡牌效果-10%
+BD005,防线脆弱,负面,比赛单局,1,defense_effect-0.15,本场防守效果-15%

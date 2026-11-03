@@ -1,0 +1,9 @@
+﻿relic_id,name,relic_type,desc,effect_param
+relic_001,主力前锋,祝福遗物,所有进攻卡射门概率+8%,all_atk_shot_bonus=8
+relic_002,防守后腰,祝福遗物,每回合有概率抵挡一次对手战术点削减效果,block_point_loss_chance=0.35
+relic_003,体能队长,祝福遗物,每回合体能下滑层数减少1,reduce_fatigue_stack=1
+relic_004,边路快马,祝福遗物,我方进攻卡牌触发边路相关效果时，射门概率额外+5%,side_atk_extra_bonus=5
+relic_005,清道夫,祝福遗物,每回合开始有几率清除自身一层防守类负面Debuff,clear_def_debuff_chance=0.3
+relic_006,伤病隐患,诅咒遗物,每一场比赛开局自动叠加1层体能下滑,per_match_add_fatigue=1
+relic_007,后防漏洞,诅咒遗物,所有防守卡效果-6%,all_def_effect_reduce=-6
+relic_008,急躁前锋,诅咒遗物,进攻卡有10%概率触发失误，本次无射门判定,atk_miss_chance=0.10

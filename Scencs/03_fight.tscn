@@ -1,0 +1,343 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Scripts/fight_scene.gd" id="1_fight"]
+
+[sub_resource type="StyleBoxFlat" id="sb_playzone"]
+bg_color = Color(0.2, 0.5, 1.0, 0.1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.7, 1.0, 0.6)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="sb_info"]
+bg_color = Color(0.08, 0.12, 0.2, 0.82)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5, 0.8, 1.0, 0.5)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_g_n"]
+bg_color = Color(0.14, 0.5, 0.28, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.25)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="btn_g_h"]
+bg_color = Color(0.2, 0.66, 0.36, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.4)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="btn_g_p"]
+bg_color = Color(0.3, 0.82, 0.48, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.55)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="btn_b_n"]
+bg_color = Color(0.12, 0.35, 0.55, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.25)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="btn_b_h"]
+bg_color = Color(0.18, 0.48, 0.7, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.4)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="btn_b_p"]
+bg_color = Color(0.28, 0.6, 0.85, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.55)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="btn_o_n"]
+bg_color = Color(0.6, 0.34, 0.12, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.25)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="btn_o_h"]
+bg_color = Color(0.75, 0.45, 0.18, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.4)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="btn_o_p"]
+bg_color = Color(0.9, 0.58, 0.25, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.55)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="FightScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fight")
+
+[node name="UnitLayer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="PlayZone" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -150.0
+offset_right = 250.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+visible = false
+mouse_filter = 2
+theme_override_styles/panel = SubResource("sb_playzone")
+
+[node name="InfoPanel" type="Panel" parent="."]
+layout_mode = 1
+offset_left = 748.0
+offset_top = 16.0
+offset_right = 1264.0
+offset_bottom = 480.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("sb_info")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 26.0
+offset_right = 1254.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 40
+text = "0  :  0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoundTimerLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 98.0
+offset_right = 1254.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 17
+text = "剩余 120s | 射门CD 0s"
+
+[node name="TpLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 142.0
+offset_right = 1254.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 15
+text = "玩家战术点 4/4 | AI 4/4"
+
+[node name="PlayerBuffLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 185.0
+offset_right = 1254.0
+offset_bottom = 210.0
+theme_override_font_sizes/font_size = 13
+text = "玩家Buff 无"
+
+[node name="AiBuffLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 215.0
+offset_right = 1254.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 13
+text = "AI Buff 无"
+
+[node name="DrawLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 250.0
+offset_right = 1254.0
+offset_bottom = 280.0
+theme_override_font_sizes/font_size = 12
+text = "手牌 0/4 | 牌库 0 | 弃牌 0"
+
+[node name="TurnLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 292.0
+offset_right = 1254.0
+offset_bottom = 317.0
+theme_override_font_sizes/font_size = 14
+text = "战斗中"
+
+[node name="SlotLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 758.0
+offset_top = 328.0
+offset_right = 1254.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 14
+text = "存档槽位 0"
+
+[node name="SaveExitButton" type="Button" parent="."]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 1
+offset_left = 758.0
+offset_top = 365.0
+offset_right = 908.0
+offset_bottom = 405.0
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_b_n")
+theme_override_styles/hover = SubResource("btn_b_h")
+theme_override_styles/pressed = SubResource("btn_b_p")
+text = "保存并退出"
+
+[node name="GiveUpButton" type="Button" parent="."]
+custom_minimum_size = Vector2(130, 40)
+layout_mode = 1
+offset_left = 928.0
+offset_top = 365.0
+offset_right = 1058.0
+offset_bottom = 405.0
+theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_o_n")
+theme_override_styles/hover = SubResource("btn_o_h")
+theme_override_styles/pressed = SubResource("btn_o_p")
+text = "结束比赛"
+
+[node name="DrawCardButton" type="Button" parent="."]
+custom_minimum_size = Vector2(110, 50)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -215.0
+offset_top = -70.0
+offset_right = -105.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_g_n")
+theme_override_styles/hover = SubResource("btn_g_h")
+theme_override_styles/pressed = SubResource("btn_g_p")
+text = "摸牌"
+
+[node name="ShootButton" type="Button" parent="."]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -70.0
+offset_right = -15.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_g_n")
+theme_override_styles/hover = SubResource("btn_g_h")
+theme_override_styles/pressed = SubResource("btn_g_p")
+text = "射门"
+
+[connection signal="pressed" from="DrawCardButton" to="." method="_on_draw_card_pressed"]
+[connection signal="pressed" from="ShootButton" to="." method="_on_shoot_pressed"]
+[connection signal="pressed" from="SaveExitButton" to="." method="_on_save_exit_pressed"]
+[connection signal="pressed" from="GiveUpButton" to="." method="_on_end_match_pressed"]

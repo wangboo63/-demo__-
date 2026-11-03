@@ -1,0 +1,9 @@
+# Godot 4 项目自动缓存（勿提交）
+.godot/
+
+# 导出产物（Windows 可执行文件，体积大，不上传；发布用 GitHub Releases）
+export/
+
+# 系统/编辑器临时文件
+*.tmp
+*.user

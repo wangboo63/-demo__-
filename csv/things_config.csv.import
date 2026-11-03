@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c735ydax5k2ne"
+
+[deps]
+
+files=["res://csv/things_config.name.translation", "res://csv/things_config.desc.translation", "res://csv/things_config.effect.translation", "res://csv/things_config.price.translation"]
+
+source_file="res://csv/things_config.csv"
+dest_files=["res://csv/things_config.name.translation", "res://csv/things_config.desc.translation", "res://csv/things_config.effect.translation", "res://csv/things_config.price.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

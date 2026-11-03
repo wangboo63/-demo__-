@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dxdd23xqm06ui"
+
+[deps]
+
+files=["res://csv/event_config.node.translation", "res://csv/event_config.title.translation", "res://csv/event_config.desc.translation", "res://csv/event_config.option.translation", "res://csv/event_config.option1.translation", "res://csv/event_config.option1.translation", "res://csv/event_config.option2.translation", "res://csv/event_config.option2.translation", "res://csv/event_config.spawn.translation", "res://csv/event_config.route.translation"]
+
+source_file="res://csv/event_config.csv"
+dest_files=["res://csv/event_config.node.translation", "res://csv/event_config.title.translation", "res://csv/event_config.desc.translation", "res://csv/event_config.option.translation", "res://csv/event_config.option1.translation", "res://csv/event_config.option1.translation", "res://csv/event_config.option2.translation", "res://csv/event_config.option2.translation", "res://csv/event_config.spawn.translation", "res://csv/event_config.route.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

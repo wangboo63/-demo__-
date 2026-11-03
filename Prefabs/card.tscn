@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://483o72tyuv7b"]
+
+[ext_resource type="Script" uid="uid://dq0eqff27m332" path="res://Prefabs/card.gd" id="1_4cpis"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6booa"]
+bg_color = Color(1, 0.5, 0.55, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.62, 0.2, 0.3, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Card" type="Control" unique_id=618335737]
+custom_minimum_size = Vector2(120, 180)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4cpis")
+
+[node name="Panel" type="Panel" parent="." unique_id=92954470]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6booa")
+
+[node name="Label" type="Label" parent="." unique_id=945084466]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -34.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 26.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 18
+text = "费用"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=281340120]
+layout_mode = 1
+anchor_right = 1.0
+offset_left = 8.0
+offset_top = 30.0
+offset_right = -8.0
+offset_bottom = 54.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 16
+text = "卡牌名"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=731392806]
+layout_mode = 1
+anchor_right = 1.0
+offset_left = 8.0
+offset_top = 58.0
+offset_right = -8.0
+offset_bottom = -6.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 12
+text = "卡牌描述"
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 0
+
+[connection signal="mouse_entered" from="Panel" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panel" to="." method="_on_panel_mouse_exited"]

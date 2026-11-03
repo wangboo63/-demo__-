@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dfn5cryf5y1gq"
+
+[deps]
+
+files=["res://csv/ai_config.name.translation", "res://csv/ai_config.ai.translation", "res://csv/ai_config.desc.translation", "res://csv/ai_config.intent.translation", "res://csv/ai_config.hp.translation", "res://csv/ai_config.is.translation"]
+
+source_file="res://csv/ai_config.csv"
+dest_files=["res://csv/ai_config.name.translation", "res://csv/ai_config.ai.translation", "res://csv/ai_config.desc.translation", "res://csv/ai_config.intent.translation", "res://csv/ai_config.hp.translation", "res://csv/ai_config.is.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

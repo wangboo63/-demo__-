@@ -1,0 +1,13 @@
+﻿event_id,node_type,title,desc,option_num,option1_text,option1_effect,option2_text,option2_effect,spawn_weight,route_bias
+event_001,事件格,球探拜访,球探带来了3张备选战术卡牌，你可以挑选一张加入卡组，也可以选择放弃。,1,挑选一张卡牌加入卡组,add_random_card:attack,放弃,,12,all
+event_002,事件格,战术研讨会,教练组开展战术研讨，可以免费升级卡组内任意一张卡牌。,1,选择一张卡牌免费升级,free_upgrade_card,,,10,all
+event_003,事件格,训练场陷阱,训练安排出现疏漏，全队体能透支，获得1层【体能下滑】debuff，无任何奖励。,1,接受结果,"add_debuff:体能下滑,1",,,8,all
+event_004,事件格,教练谈心,你和助理教练复盘战术，可以移除本局任意一件遗物（祝福或诅咒均可）。,1,移除一件本局遗物,remove_relic,,,9,all
+event_005,事件格,队医拜访,队医前来休整队伍，清除下一场比赛全部临时debuff（体能透支、防线脆弱，诅咒遗物效果无法清除）。,1,接受队医休整,clear_next_temp_debuff,,,11,all
+event_006,事件格,媒体采访,媒体前来采访，你有两个选择。,2,接受采访，领取少量金币,add_gold:25,选择专注备战，下一场进攻卡牌效果±10%随机浮动,set_next_mind_fluctuate,10,all
+event_007,负面Buff格,风险抉择,面前是一次高风险抉择，请选择方案。,2,拿60金币，下一场比赛触发【体能透支】（卡牌效果-10%）,"add_gold:60;add_next_debuff:体能透支,1",免费删除一张卡组卡牌，下一场比赛【防线脆弱】（防守效果-15%）,"remove_one_card;add_next_debuff:防线脆弱,1",12,all
+event_008,正面Buff格,赛前动员,队员士气高涨，下一场比赛获得小幅攻防加成。,1,收下增益,add_next_buff:攻防小幅加成,,,13,all
+event_009,友谊赛格,友谊热身赛,一场低强度友谊热身赛，对手实力偏弱。,1,进行友谊赛，胜利获得金币，赛后预览一张随机卡牌,friendly_match,,,14,attack
+event_010,探索格,战术复盘,复盘上一轮比赛，重新审视卡组思路。,1,继续,nothing,,,10,defend
+event_011,事件格,意外收获,工作人员找到一份旧战术笔记，获得金币。,1,收下笔记，获得金币,add_gold:35,,,7,all
+event_012,事件格,隐患浮现,训练伤病隐患，有概率拿到诅咒遗物【伤病隐患】，同时获得金币。,1,接受风险,add_gold:40;add_relic:relic_001,,,6,attack

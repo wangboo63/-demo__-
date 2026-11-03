@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://t7kfgxv11s2e"
+
+[deps]
+
+files=["res://csv/relic_config.name.translation", "res://csv/relic_config.relic.translation", "res://csv/relic_config.desc.translation", "res://csv/relic_config.effect.translation"]
+
+source_file="res://csv/relic_config.csv"
+dest_files=["res://csv/relic_config.name.translation", "res://csv/relic_config.relic.translation", "res://csv/relic_config.desc.translation", "res://csv/relic_config.effect.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

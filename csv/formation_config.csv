@@ -1,0 +1,4 @@
+﻿formation_id,formation_name,base_atk_mod,base_def_mod,start_card_list,,,,,,,
+form_433,433进攻阵型,1.1,0.9,card_001,card_002,card_009,card_010,card_011,card_013,card_021,card_024
+form_4231,4231均衡阵型,1,1,card_001,card_003,card_011,card_012,card_014,card_018,card_022,card_025
+form_532,532大巴防守阵型,0.9,1.1,card_004,card_011,card_012,card_015,card_016,card_017,card_022,card_026

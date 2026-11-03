@@ -1,0 +1,183 @@
+[gd_scene load_steps=8 format=3 uid="uid://c0e2gttptano2"]
+
+[ext_resource type="Script" path="res://Ui/guodu.gd" id="1_guodu"]
+
+[sub_resource type="StyleBoxFlat" id="bg_slots"]
+bg_color = Color(0.055, 0.1, 0.13, 1)
+
+[sub_resource type="StyleBoxFlat" id="btn_n"]
+bg_color = Color(0.12, 0.42, 0.24, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.2)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_h"]
+bg_color = Color(0.18, 0.62, 0.34, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.35)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_p"]
+bg_color = Color(0.28, 0.78, 0.46, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.5)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_c_n"]
+bg_color = Color(0.4, 0.12, 0.14, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.2)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="btn_c_h"]
+bg_color = Color(0.62, 0.2, 0.22, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.35)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="btn_c_p"]
+bg_color = Color(0.8, 0.3, 0.32, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.5)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="01Guodu" type="Control" unique_id=1370592897]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_guodu")
+
+[node name="Panel" type="Panel" parent="." unique_id=1293255626]
+layout_mode = 0
+offset_right = 1362.0
+offset_bottom = 786.0
+theme_override_styles/panel = SubResource("bg_slots")
+
+[node name="ClearButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 20.0
+offset_right = 1230.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_c_n")
+theme_override_styles/hover = SubResource("btn_c_h")
+theme_override_styles/pressed = SubResource("btn_c_p")
+text = "删除选中存档"
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 830.0
+offset_top = 20.0
+offset_right = 1018.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "进入游戏"
+
+[node name="Button" type="Button" parent="." unique_id=1402932864]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 140.0
+offset_right = 455.0
+offset_bottom = 581.0
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "暂无存档"
+
+[node name="Button2" type="Button" parent="." unique_id=1573292534]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 140.0
+offset_right = 813.0
+offset_bottom = 581.0
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "暂无存档"
+
+[node name="Button3" type="Button" parent="." unique_id=1185337983]
+layout_mode = 0
+offset_left = 851.0
+offset_top = 142.0
+offset_right = 1171.0
+offset_bottom = 583.0
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "暂无存档"
+
+[node name="StatsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 636.0
+offset_right = 1180.0
+offset_bottom = 700.0
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.99, 0.84, 0.2, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.6)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+text = "总战绩  胜0 负0 平0 | 总进球 0:0 | 场次 0"
+horizontal_alignment = 1
+vertical_alignment = 1

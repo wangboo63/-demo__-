@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8w22dx14u3hm"]
+
+[ext_resource type="Script" path="res://Ui/win.gd" id="1_win"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6booa"]
+font_size = 96
+font_color = Color(1, 0.87, 0.28, 1)
+shadow_color = Color(0, 0, 0, 0.55)
+shadow_offset = Vector2(8, 8)
+
+[sub_resource type="StyleBoxFlat" id="bg_win"]
+bg_color = Color(0.05, 0.16, 0.1, 1)
+
+[sub_resource type="StyleBoxFlat" id="btn_n"]
+bg_color = Color(0.14, 0.5, 0.28, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.2)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_h"]
+bg_color = Color(0.2, 0.66, 0.36, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.35)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_p"]
+bg_color = Color(0.3, 0.82, 0.48, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.5)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="03Win" type="Control" unique_id=1102423485]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_win")
+
+[node name="Panel" type="Panel" parent="." unique_id=461697837]
+layout_mode = 0
+offset_right = 1406.0
+offset_bottom = 801.0
+theme_override_styles/panel = SubResource("bg_win")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1879934868]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 119.0
+offset_right = 1019.0
+offset_bottom = 340.0
+text = "我们是冠军!!!"
+label_settings = SubResource("LabelSettings_6booa")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel" unique_id=885471206]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 437.0
+offset_right = 846.0
+offset_bottom = 560.0
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "重新开始"
+
+[node name="BackButton" type="Button" parent="Panel" unique_id=885471207]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 585.0
+offset_right = 846.0
+offset_bottom = 708.0
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "回到主界面"

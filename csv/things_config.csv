@@ -1,0 +1,13 @@
+﻿thing_id,name,desc,effect_param,price
+thing_001,队医包,清除本场2层体能下滑Debuff,"remove_debuff=体能下滑,2",30
+thing_002,战术笔记,本局下一场比赛所有卡牌效果+5%,next_match_all_bonus=5,25
+thing_003,黄牌申诉,清除本场黄牌标记,clear_yellow_card=1,20
+thing_004,体能补给包,下一场比赛开局减少2层体能下滑,pre_clear_fatigue=2,35
+thing_005,战术录像分析,下一场战斗开局，预览对手全部手牌,preview_enemy_hand=1,40
+thing_006,赛前动员令,下一场比赛开局士气直接提升至高涨状态,pre_set_morale=高涨,45
+thing_007,防守预案,下一场开局直接获得【稳固防线】持续2回合,"pre_add_buff=稳固防线,2",42
+thing_008,进攻动员海报,下一场开局获得【反击机会】增益，进攻射门+15%,pre_shot_bonus=15,38
+thing_009,裁判沟通预案,下一场比赛我方卡牌触发黄牌概率降低50%,reduce_yellow_chance=0.5,32
+thing_010,球探情报册,预览下一场AI卡组构成（升级卡数量、流派）,preview_ai_deck_info=1,50
+thing_011,热身训练手册,下回合抽牌数量+1（第一场战斗首回合生效）,first_round_draw_add=1,36
+thing_012,中场热身练习,下一场开局获得【中场控制力】持续2回合,"pre_add_buff=中场控制力,2",44

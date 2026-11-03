@@ -1,0 +1,6 @@
+﻿ai_id,name,ai_type,desc,intent_weight,hp,is_boss
+ai_001,传控型中场队,传控AI,稳步叠加中场buff，慢慢寻找进攻机会,buff_stack=60;attack=30;defend=10,30,FALSE
+ai_002,反击型防守队,反击AI,优先防守，等待我方进攻失败触发反击,buff_stack=20;attack=30;defend=50,32,FALSE
+ai_003,高压逼抢队,高压AI,持续削减玩家战术点，叠加体能debuff,buff_stack=70;attack=20;defend=10,34,FALSE
+ai_004,精英劲旅,精英AI,卡组包含1张升级卡牌，攻防均衡,buff_stack=40;attack=35;defend=25,42,FALSE
+ai_005,杯赛冠军BOSS,决赛Boss,上半场保守，落后后全力进攻，卡组带2升级卡+稀有卡,first_half_weight:defend=50;second_half_lag:attack=70,60,TRUE

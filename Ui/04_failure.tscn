@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3 uid="uid://bn0atcw1r357q"]
+
+[ext_resource type="Script" path="res://Ui/failure.gd" id="1_fail"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6booa"]
+font_size = 96
+font_color = Color(1, 0.32, 0.32, 1)
+shadow_color = Color(0, 0, 0, 0.55)
+shadow_offset = Vector2(8, 8)
+
+[sub_resource type="StyleBoxFlat" id="bg_fail"]
+bg_color = Color(0.16, 0.05, 0.06, 1)
+
+[sub_resource type="StyleBoxFlat" id="btn_n"]
+bg_color = Color(0.4, 0.12, 0.14, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.2)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_h"]
+bg_color = Color(0.62, 0.2, 0.22, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.35)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_p"]
+bg_color = Color(0.8, 0.3, 0.32, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.5)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="04Failure" type="Control" unique_id=1771853966]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fail")
+
+[node name="Panel" type="Panel" parent="." unique_id=794369338]
+layout_mode = 0
+offset_right = 1492.0
+offset_bottom = 832.0
+theme_override_styles/panel = SubResource("bg_fail")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1716915718]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 119.0
+offset_right = 1063.0
+offset_bottom = 326.0
+text = "你输了"
+label_settings = SubResource("LabelSettings_6booa")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel" unique_id=513988433]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 417.0
+offset_right = 818.0
+offset_bottom = 531.0
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "重新开始"
+
+[node name="BackButton" type="Button" parent="Panel" unique_id=513988434]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 555.0
+offset_right = 818.0
+offset_bottom = 669.0
+theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/hover = SubResource("btn_h")
+theme_override_styles/pressed = SubResource("btn_p")
+text = "回到主界面"

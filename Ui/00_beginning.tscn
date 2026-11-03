@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://um23vcrre1vt"]
+
+[ext_resource type="Script" uid="uid://tebyqljwvnjl" path="res://Ui/beginning.gd" id="1_begin"]
+
+[sub_resource type="StyleBoxFlat" id="bg_main"]
+bg_color = Color(0.055, 0.1, 0.13, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6booa"]
+font_size = 120
+font_color = Color(0.99, 0.84, 0.2, 1)
+shadow_color = Color(0, 0, 0, 0.55)
+shadow_offset = Vector2(12, 12)
+
+[sub_resource type="StyleBoxFlat" id="btn_n"]
+bg_color = Color(0.12, 0.42, 0.24, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.2)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_p"]
+bg_color = Color(0.28, 0.78, 0.46, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.5)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_h"]
+bg_color = Color(0.18, 0.62, 0.34, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.35)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_q_n"]
+bg_color = Color(0.4, 0.12, 0.14, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.2)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_q_p"]
+bg_color = Color(0.8, 0.3, 0.32, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.5)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="btn_q_h"]
+bg_color = Color(0.62, 0.2, 0.22, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.35)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="00Beginning" type="Control" unique_id=192376724]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_begin")
+
+[node name="Panel" type="Panel" parent="." unique_id=90203109]
+layout_mode = 0
+offset_right = 1304.0
+offset_bottom = 762.0
+theme_override_styles/panel = SubResource("bg_main")
+
+[node name="Label" type="Label" parent="Panel" unique_id=753497367]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 68.0
+offset_right = 1282.0
+offset_bottom = 291.0
+text = "绿茵战术卡"
+label_settings = SubResource("LabelSettings_6booa")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel" unique_id=1130790140]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 339.0
+offset_right = 339.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/pressed = SubResource("btn_p")
+theme_override_styles/hover = SubResource("btn_h")
+text = "开始游戏"
+
+[node name="Button4" type="Button" parent="Panel" unique_id=1309702546]
+layout_mode = 0
+offset_left = 1038.0
+offset_top = 628.0
+offset_right = 1281.0
+offset_bottom = 718.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("btn_q_n")
+theme_override_styles/pressed = SubResource("btn_q_p")
+theme_override_styles/hover = SubResource("btn_q_h")
+text = "退出游戏"
+
+[node name="Button2" type="Button" parent="Panel" unique_id=750609500]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 465.0
+offset_right = 341.0
+offset_bottom = 555.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/pressed = SubResource("btn_p")
+theme_override_styles/hover = SubResource("btn_h")
+text = "存档"
+
+[node name="Button3" type="Button" parent="Panel" unique_id=1726949191]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 592.0
+offset_right = 346.0
+offset_bottom = 682.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("btn_n")
+theme_override_styles/pressed = SubResource("btn_p")
+theme_override_styles/hover = SubResource("btn_h")
+text = "设置"

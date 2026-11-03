@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ngd0saa18gko"
+
+[deps]
+
+files=["res://csv/formation_config.formation.translation", "res://csv/formation_config.base.translation", "res://csv/formation_config.base.translation", "res://csv/formation_config.start.translation"]
+
+source_file="res://csv/formation_config.csv"
+dest_files=["res://csv/formation_config.formation.translation", "res://csv/formation_config.base.translation", "res://csv/formation_config.base.translation", "res://csv/formation_config.start.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
